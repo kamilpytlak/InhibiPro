@@ -68,16 +68,21 @@ def process_molecule(smiles, target, molecule, model, features):
 
     st.markdown("Similar molecules to the given SMILES:")
 
-    similar_molecules_df = similar_molecules_to_df(molecule.find_similar_molecules())
-    st.dataframe(similar_molecules_df)
+    try:
+        similar_molecules_df = similar_molecules_to_df(molecule.find_similar_molecules())
+    except Exception as e:
+        st.write('The connection to the ChEMBL database has not been established.'
+                 ' Similar molecules cannot be generated.')
+    else:
+        st.dataframe(similar_molecules_df)
 
-    csv = convert_df(similar_molecules_df)
-    st.download_button(
-        label='Download dataframe',
-        data=csv,
-        file_name='similar_molecules.csv',
-        mime='text/csv'
-    )
+        csv = convert_df(similar_molecules_df)
+        st.download_button(
+            label='Download dataframe',
+            data=csv,
+            file_name='similar_molecules.csv',
+            mime='text/csv'
+        )
 
 
 def calculate_inhibition_dose(molecular_weight: float, pic50: float) -> float:
