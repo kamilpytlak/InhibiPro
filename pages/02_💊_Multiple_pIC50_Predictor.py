@@ -8,7 +8,7 @@ from utils.model_utils import load_selected_features, load_model, preprocess_des
     convert_df
 from utils.molecule_utils import Molecule
 
-TARGET_NAMES = listdir('models')
+TARGET_NAMES = sorted(listdir('models'))
 FING_COLUMNS = [f"Morgan_{i}" for i in range(1, 2049)]
 
 
