@@ -8,7 +8,7 @@ from utils.model_utils import load_selected_features, load_model, preprocess_des
     convert_df
 from utils.molecule_utils import Molecule
 
-TARGET_NAMES = sorted(listdir('models'))
+TARGET_NAMES = sorted(listdir('models'), key=str.casefold)
 FING_COLUMNS = [f"Morgan_{i}" for i in range(1, 2049)]
 
 
@@ -19,11 +19,12 @@ st.set_page_config(
 
 st.title("Multiple pIC50 Predictor")
 
-target_input = st.selectbox(label='Target Input', options=TARGET_NAMES)
+target_input = st.selectbox(label='Target human protein', options=TARGET_NAMES)
 
 if target_input:
     desc_fing_options = [dfo.title() for dfo in listdir(f"models/{target_input}")]
-    desc_fing_input = st.selectbox(label='Descriptor/Fingerprint', options=desc_fing_options)
+    desc_fing_input = st.selectbox(label='Predictions based on descriptors or Morgan fingerprints?',
+                                   options=desc_fing_options)
     file_upload = st.file_uploader(label='Choose a file', type=['csv'])
 
     if st.button(label='Predict pIC50'):

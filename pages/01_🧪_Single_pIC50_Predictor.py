@@ -8,7 +8,7 @@ from utils.model_utils import load_selected_features, load_model, preprocess_des
     preprocess_fingerprints, process_molecule
 from utils.molecule_utils import Molecule
 
-TARGET_NAMES = sorted(listdir('models'))
+TARGET_NAMES = sorted(listdir('models'), key=str.casefold)
 FING_COLUMNS = [f"Morgan_{i}" for i in range(1, 2049)]
 
 
