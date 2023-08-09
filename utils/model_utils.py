@@ -32,6 +32,7 @@ def load_selected_features(path: str) -> list:
     return selected_features
 
 
+@st.cache_resource
 def load_model(model_path: str):
     if exists(model_path):
         return keras.models.load_model(model_path)
