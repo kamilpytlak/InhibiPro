@@ -26,8 +26,8 @@ st.markdown(
     
     *  🧪**Predict pIC50 Values**: Utilizing state-of-the-art predictive models, DrugHunter 
     calculates the pIC50 values for various human protein inhibitors. This information is crucial for assessing the 
-    potency and efficacy of potential drugs. Users can choose from a range of 336 human proteins for which they want 
-    to predict drug bioactivity. Proteins like Acetylcholinesterase and HERG can be selected based on the user's 
+    potency and efficacy of potential drugs. Users can choose from a range of 282 human proteins for which they want 
+    to predict drug bioactivity. Proteins like Acetylcholinesterase and Monoamine oxidase can be selected based on the user's 
     specific needs.
     
     *  📙**Extensive Protein Database**: DrugHunter incorporates a vast collection of human protein 
@@ -35,7 +35,7 @@ st.markdown(
     the accuracy and reliability of predictions.
     
     *  📦**Predictive Models**: The application provides efficient machine 
-    learning models, including Random Forest, k-Nearest Neighbors, LightGBM, and neural networks, to ensure accurate 
+    learning models, including XGBoost, Random Forest, LightGBM, and neural networks, to ensure accurate 
     predictions of pharmacological activity.
     
     *  🙋**Descriptor and Fingerprint Options**: Users have the flexibility to 
