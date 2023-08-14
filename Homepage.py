@@ -14,11 +14,11 @@ with col1:
     st.image(DRUG_HUNTER_IMAGE, width=250)
 
 with col2:
-    st.title('DrugHunter - application for prediction of drug bioactivity')
+    st.title('DrugHunter - application for predicting drug bioactivity')
 
 st.markdown(
     """
-    DrugHunter is a powerful application designed to predict pIC50 values for human protein inhibitors.
+    DrugHunter is a powerful application designed for predicting pIC50 values for human protein inhibitors.
     With its advanced machine learning algorithms and comprehensive database of protein structures,
     this app provides accurate and reliable predictions for drug developers and researchers.
     
