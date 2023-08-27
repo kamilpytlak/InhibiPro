@@ -7,7 +7,6 @@ st.set_page_config(
 
 DRUG_HUNTER_IMAGE = 'img/drug_hunter.jpg'
 
-
 col1, col2 = st.columns(2)
 
 with col1:

@@ -13,6 +13,7 @@ tensorflow = "*"
 chembl-webresource-client = "*"
 pandas = "*"
 rdkit = "*"
+streamlit-extras = "*"
 
 [dev-packages]
 
