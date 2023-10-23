@@ -26,6 +26,7 @@ def similar_molecules_to_df(similar_molecules: List[Dict]) -> pd.DataFrame:
     return similar_molecules_df
 
 
+@st.cache_data
 def load_selected_features(path: str) -> list:
     with open(path) as f:
         selected_features = json.load(f)
