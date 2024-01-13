@@ -9,10 +9,10 @@ xgboost = "==1.7.4"
 lightgbm = "==3.3.5"
 streamlit = "*"
 scikit-learn-intelex = "==2023.1.1"
-tensorflow = "*"
+tensorflow = "==2.15.0"
 chembl-webresource-client = "*"
 pandas = "*"
-rdkit = "*"
+rdkit = "==2023.3.3"
 streamlit-extras = "*"
 
 [dev-packages]
