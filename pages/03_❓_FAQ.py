@@ -41,7 +41,7 @@ with st.expander('What models have been trained?'):
         assessment.
         
         For molecular descriptors:
-        - 19 XGBoost models (about 49.2%),
+        - 119 XGBoost models (about 49.2%),
         - 90 LightGBM models (about 37.2%),
         - 31 random forest models (about 12.8%),
         - 2 neural networks (about 0.8%).
@@ -75,9 +75,9 @@ with st.expander('On what basis was the quality of the models estimated?'):
     Since nonlinear models were used for the prediction of $pIC_{50}$ in the present study, the estimated metrics for 
     both the sets after 5-fold cross-validation and the test set were used for the final selection of the best predictive 
     models for the human protein data, following the recommendations proposed by Veerasamy et al. ([link](https://www.researchgate.net/profile/Ravichandran-Veerasamy/publication/284566093_Validation_of_QSAR_Models_-_Strategies_and_Importance/links/5ca57788458515f78522300e/Validation-of-QSAR-Models-Strategies-and-Importance.pdf))
-    -  $R^2 > $0.5$ after cross-validation;
-    -  $R^2 > 0.6$ for the test set;
-    -  the range of biological activity tested should include at least one logarithmic unit.
+    -  $R^2$ > $0.5$ after cross-validation;
+    -  $R^2$ > $0.6$ for the test set;
+    -  the range of biological activity should include at least one logarithmic unit.
     
     If there were at least two models meeting the above criteria for a single target protein, the one with the lowest 
     $RMSE$ value for the test set was selected from among them.
