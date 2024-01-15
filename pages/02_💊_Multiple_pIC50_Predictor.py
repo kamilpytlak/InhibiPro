@@ -4,8 +4,7 @@ import joblib
 import pandas as pd
 import streamlit as st
 
-from utils.model_utils import load_selected_features, load_model, preprocess_descriptors, preprocess_fingerprints, \
-    convert_df
+from utils.model_utils import load_selected_features, load_model, preprocess_descriptors, preprocess_fingerprints
 from utils.molecule_utils import Molecule
 
 TARGET_NAMES = sorted(listdir('models'), key=str.casefold)
@@ -67,13 +66,7 @@ if target_input:
 
                         st.success('pIC50 prediction from a file successfully completed!', icon="✅")
 
-                        csv = convert_df(smiles_df)
-                        st.download_button(
-                            label='Download prediction as CSV',
-                            data=csv,
-                            file_name='pic50_prediction.csv',
-                            mime='text/csv'
-                        )
+                        st.dataframe(smiles_df)
 
                     elif desc_fing_input == 'Fingerprints':
                         selected_features_path = f"models/{target_input}/fingerprints/selected_features.json"
@@ -92,10 +85,4 @@ if target_input:
 
                         st.success('SMILES prediction from a file successfully completed!', icon="✅")
 
-                        csv = convert_df(smiles_df)
-                        st.download_button(
-                            label='Download data as CSV',
-                            data=csv,
-                            file_name='pic50_prediction.csv',
-                            mime='text/csv'
-                        )
+                        st.dataframe(smiles_df.style.highlight_max(subset='Predicted pIC50'))

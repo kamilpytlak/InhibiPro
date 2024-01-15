@@ -78,19 +78,6 @@ def process_molecule(smiles, target, molecule, model, features):
     else:
         st.dataframe(similar_molecules_df)
 
-        csv = convert_df(similar_molecules_df)
-        st.download_button(
-            label='Download dataframe',
-            data=csv,
-            file_name='similar_molecules.csv',
-            mime='text/csv'
-        )
-
 
 def calculate_inhibition_dose(molecular_weight: float, pic50: float) -> float:
     return ((molecular_weight * 10 ** -pic50) * 1000).round(5)
-
-
-@st.cache_data
-def convert_df(df):
-    return df.to_csv(index=False).encode('utf-8')

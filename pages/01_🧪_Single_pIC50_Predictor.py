@@ -4,7 +4,7 @@ import joblib
 import pandas as pd
 import streamlit as st
 
-from utils.model_utils import load_selected_features, load_model, preprocess_descriptors,\
+from utils.model_utils import load_selected_features, load_model, preprocess_descriptors, \
     preprocess_fingerprints, process_molecule
 from utils.molecule_utils import Molecule
 
