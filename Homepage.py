@@ -5,7 +5,7 @@ st.set_page_config(
     page_icon='🏠'
 )
 
-DRUG_HUNTER_IMAGE = 'img/drug_hunter.jpg'
+DRUG_HUNTER_IMAGE = 'img/inhibipro_logo.jpg'
 
 col1, col2 = st.columns(2)
 
@@ -13,23 +13,23 @@ with col1:
     st.image(DRUG_HUNTER_IMAGE, width=250)
 
 with col2:
-    st.title('DrugHunter - application for predicting drug bioactivity')
+    st.title('InhibiPro - application for predicting drug bioactivity')
 
 st.markdown(
     """
-    DrugHunter is a powerful application designed for predicting pIC50 values for human protein inhibitors.
+    InhibiPro is a powerful application designed for predicting pIC50 values for human protein inhibitors.
     With its advanced machine learning algorithms and comprehensive database of protein structures,
     this app provides accurate and reliable predictions for drug developers and researchers.
     
     **Key features:**
     
-    *  🧪**Predict pIC50 Values**: Utilizing state-of-the-art predictive models, DrugHunter 
+    *  🧪**Predict pIC50 Values**: Utilizing state-of-the-art predictive models, InhibiPro 
     calculates the pIC50 values for various human protein inhibitors. This information is crucial for assessing the 
     potency and efficacy of potential drugs. Users can choose from a range of 282 human proteins for which they want 
     to predict drug bioactivity. Proteins like Acetylcholinesterase and Monoamine oxidase can be selected based on the user's 
     specific needs.
     
-    *  📙**Extensive Protein Database**: DrugHunter incorporates a vast collection of human protein 
+    *  📙**Extensive Protein Database**: InhibiPro incorporates a vast collection of human protein 
     structures, including known inhibitors and their associated pIC50 values. This comprehensive database enhances 
     the accuracy and reliability of predictions.
     
@@ -49,7 +49,7 @@ st.markdown(
     70% structural similarity to the user-inputted compound. This feature allows users to explore related compounds 
     that may exhibit similar bioactivity.
     
-    *  💻**User-friendly Interface**: DrugHunter offers a user-friendly 
+    *  💻**User-friendly Interface**: InhibiPro offers a user-friendly 
     interface, written in Streamlit, making it easy for researchers and drug developers to navigate and obtain 
     predictions. The intuitive design streamlines the prediction process and ensures efficient use of the 
     application.

@@ -17,12 +17,12 @@ st.title('FAQ')
 
 with st.expander('What is the purpose of this application?'):
     st.markdown("""
-    The purpose of DrugHunter is to provide a powerful platform for predicting pIC50 values of human protein inhibitors. 
+    The purpose of InhibiPro is to provide a powerful platform for predicting pIC50 values of human protein inhibitors. 
     This application utilizes advanced machine learning algorithms and an extensive database of protein structures 
-    to offer accurate and reliable predictions for drug developers and researchers. DrugHunter employs a state-of-the-art 
+    to offer accurate and reliable predictions for drug developers and researchers. InhibiPro employs a state-of-the-art 
     Quantitative Structure-Activity Relationship (QSAR) methodology, which involves analyzing the relationship between 
     the structural features of chemical compounds and their biological activities. By calculating pIC50 values using QSAR 
-    models, which assess the potency and efficacy of potential drugs, DrugHunter aids in identifying promising compounds 
+    models, which assess the potency and efficacy of potential drugs, InhibiPro aids in identifying promising compounds 
     for further development in the field of drug discovery. This approach leverages the understanding of molecular structures 
     and their impact on bioactivity to provide valuable insights for drug development efforts.
     

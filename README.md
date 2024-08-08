@@ -1,9 +1,9 @@
 
 <h1 align="center">
   <br>
-  <a href="https://drughunter.streamlit.app/"><img src="img/drug_hunter.jpg" alt="DrugHunter logo" width="250"></a>
+  <a href="https://InhibiPro.streamlit.app/"><img src="img/drug_hunter.jpg" alt="InhibiPro logo" width="250"></a>
   <br>
-  DrugHunter
+  InhibiPro
   <br>
 </h1>
 
@@ -17,18 +17,18 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot](img/drughunter_gif.gif)
+![screenshot](img/InhibiPro_gif.gif)
 
 <p align="center">
-Drug Hunter is a powerful web-based application for predicting pIC50 values for human protein inhibitors (potential new drugs). Based on the QSAR methodology and state-of-the-art machine learning algorithms, as well as a comprehensive database of protein structures, DrugHunter provides accurate and reliable predictions for drug developers and researchers.
+InhibiPro is a powerful web-based application for predicting pIC50 values for human protein inhibitors (potential new drugs). Based on the QSAR methodology and state-of-the-art machine learning algorithms, as well as a comprehensive database of protein structures, InhibiPro provides accurate and reliable predictions for drug developers and researchers.
 </p>
 
 ## Key Features
 
-*  🧪 **Predict pIC50 Values**: Using state-of-the-art prediction models, DrugHunter calculates the pIC50 values for various human protein inhibitors. This information is critical in assessing the potency and efficacy of potential drugs. Users can choose from a range of 336 human proteins for which they wish to predict drug bioactivity. Proteins such as acetylcholinesterase and HERG can be selected according to the user's specific needs.
+*  🧪 **Predict pIC50 Values**: Using state-of-the-art prediction models, InhibiPro calculates the pIC50 values for various human protein inhibitors. This information is critical in assessing the potency and efficacy of potential drugs. Users can choose from a range of 336 human proteins for which they wish to predict drug bioactivity. Proteins such as acetylcholinesterase and HERG can be selected according to the user's specific needs.
 
 
-*  📙 **Comprehensive Protein Database**: DrugHunter includes an extensive collection of human protein structures, including known inhibitors and their associated pIC50 values. This extensive database increases the accuracy and reliability of predictions.
+*  📙 **Comprehensive Protein Database**: InhibiPro includes an extensive collection of human protein structures, including known inhibitors and their associated pIC50 values. This extensive database increases the accuracy and reliability of predictions.
 
 
 *  📦 **Powerful Predictive Models**: The application provides powerful machine learning models, including Random Forest, k-Nearest Neighbours, LightGBM and neural networks, to ensure accurate prediction of pharmacological activity.
@@ -43,7 +43,7 @@ Drug Hunter is a powerful web-based application for predicting pIC50 values for 
 *  📏 **Identification of Similar Compounds**: The application displays similar chemical compounds based on a minimum of 70% structural similarity to the compound entered by the user. This feature allows users to explore related compounds that may have similar bioactivity.
 
 
-*  💻 **User-friendly Interface**: DrugHunter offers a user-friendly interface, written in Streamlit, that makes it easy for researchers and drug developers to navigate and obtain predictions. The intuitive design streamlines the prediction process and ensures efficient use of the application.
+*  💻 **User-friendly Interface**: InhibiPro offers a user-friendly interface, written in Streamlit, that makes it easy for researchers and drug developers to navigate and obtain predictions. The intuitive design streamlines the prediction process and ensures efficient use of the application.
 
 
 *  💾 **Export and Save Results**: Users can export predicted pIC50 values and associated data for further analysis or integration into their research workflow. The application also allows users to save and organize prediction results for future reference.
@@ -52,15 +52,15 @@ Drug Hunter is a powerful web-based application for predicting pIC50 values for 
 
 There are two ways to use this tool:
 
-1. Directly from the website: https://drughunter.streamlit.app/.
+1. Directly from the website: https://InhibiPro.streamlit.app/.
 2. Clone the repository (using git or by downloading it directly from the website), install the dependencies from the configuration file `Pipfile` and launch the app locally using a browser.
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/kamilpytlak/DrugHunter
+$ git clone https://github.com/kamilpytlak/InhibiPro
 
 # Go into the repository
-$ cd DrugHunter
+$ cd InhibiPro
 
 # Install pipenv (in case it's not installed) and, run pipenv shell and install dependencies
 $ pip install pipenv
