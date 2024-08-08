@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="https://InhibiPro.streamlit.app/"><img src="img/drug_hunter.jpg" alt="InhibiPro logo" width="250"></a>
+  <a href="https://inhibipro.streamlit.app/"><img src="img/inhibipro_logo.jpg" alt="InhibiPro logo" width="250"></a>
   <br>
   InhibiPro
   <br>
@@ -17,7 +17,7 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot](img/InhibiPro_gif.gif)
+![screenshot](img/inhibipro.gif)
 
 <p align="center">
 InhibiPro is a powerful web-based application for predicting pIC50 values for human protein inhibitors (potential new drugs). Based on the QSAR methodology and state-of-the-art machine learning algorithms, as well as a comprehensive database of protein structures, InhibiPro provides accurate and reliable predictions for drug developers and researchers.
