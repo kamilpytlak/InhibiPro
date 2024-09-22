@@ -4,9 +4,8 @@ from typing import List, Dict
 
 import joblib
 import pandas as pd
-from rdkit.Chem import Draw
-
 import streamlit as st
+from rdkit.Chem import Draw
 from tensorflow import keras
 
 
