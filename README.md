@@ -68,7 +68,7 @@ InhibiPro is a powerful web-based application for predicting pIC50 values for hu
 
 There are two ways to use this tool:
 
-1. Directly from the website: https://InhibiPro.streamlit.app/.
+1. Directly from the website: https://apps.healthuniverse.com/mqz-uee-tgp/.
 2. Clone the repository (using git or by downloading it directly from the website), install the dependencies from the
    configuration file `Pipfile` and launch the app locally using a browser.
 
